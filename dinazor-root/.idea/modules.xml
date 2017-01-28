@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dinazor-core/dinazor-core.iml" filepath="$PROJECT_DIR$/.idea/modules/dinazor-core/dinazor-core.iml" group="dinazor-core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dinazor-core/dinazor-core_main.iml" filepath="$PROJECT_DIR$/.idea/modules/dinazor-core/dinazor-core_main.iml" group="dinazor-core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dinazor-core/dinazor-core_test.iml" filepath="$PROJECT_DIR$/.idea/modules/dinazor-core/dinazor-core_test.iml" group="dinazor-core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dinazor-entity/dinazor-entity.iml" filepath="$PROJECT_DIR$/.idea/modules/dinazor-entity/dinazor-entity.iml" group="dinazor-entity" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dinazor-entity/dinazor-entity_main.iml" filepath="$PROJECT_DIR$/.idea/modules/dinazor-entity/dinazor-entity_main.iml" group="dinazor-entity" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dinazor-entity/dinazor-entity_test.iml" filepath="$PROJECT_DIR$/.idea/modules/dinazor-entity/dinazor-entity_test.iml" group="dinazor-entity" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dinazor-root.iml" filepath="$PROJECT_DIR$/.idea/modules/dinazor-root.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dinazor-root_main.iml" filepath="$PROJECT_DIR$/.idea/modules/dinazor-root_main.iml" group="dinazor-root" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dinazor-root_test.iml" filepath="$PROJECT_DIR$/.idea/modules/dinazor-root_test.iml" group="dinazor-root" />
+    </modules>
+  </component>
+</project>
