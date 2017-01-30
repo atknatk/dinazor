@@ -1,4 +1,3 @@
 rootProject.name = 'dinazor-root'
 include 'dinazor-core'
 include 'dinazor-entity'
-
