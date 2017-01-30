@@ -1,0 +1,9 @@
+apply plugin: 'spring-boot'
+//apply plugin: 'java'
+
+dependencies {
+    compile project(':dinazor-core')
+    compile project(':dinazor-domain')
+    compile project(':dinazor-api')
+    compile project(':dinazor-repository')
+}

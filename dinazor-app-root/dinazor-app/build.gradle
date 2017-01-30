@@ -1,0 +1,25 @@
+apply plugin: 'spring-boot'
+//apply plugin: 'java'
+
+dependencies {
+    compile project(':dinazor-api-impl')
+    compile group: 'postgresql', name: 'postgresql', version: '9.0-801.jdbc4'
+
+}
+
+//mainClassName = 'net.petrikainulainen.gradle.client.HelloWorld'
+
+
+task copyLicense {
+    outputs.file new File("$buildDir/LICENSE")
+    doLast {
+        copy {
+            from "LICENSE"
+            into "$buildDir"
+        }
+    }
+}
+
+applicationDistribution.from(copyLicense) {
+    into ""
+}

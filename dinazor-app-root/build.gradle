@@ -1,0 +1,54 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath ("io.spring.gradle:dependency-management-plugin:${MANAGEMENT_VERSION}")
+        classpath ("org.springframework.boot:spring-boot-gradle-plugin:${SPRING_BOOT_PLUGIN_VERSION}")
+
+    }
+}
+
+allprojects {
+    group 'com.dinazor'
+    version '1.0-SNAPSHOT'
+}
+
+subprojects {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+
+    apply plugin: 'java'
+    apply plugin: 'idea'
+    apply plugin: "io.spring.dependency-management"
+    apply plugin: 'spring-boot'
+
+    uploadArchives.dependsOn bootRepackage
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+    dependencyManagement {
+        imports {
+            mavenBom "org.springframework.boot:spring-boot-starter-parent:${SPRING_BOOT_VERSION}"
+        }
+    }
+
+    dependencies {
+        compile ('org.springframework.boot:spring-boot-starter') {
+            exclude module : 'spring-boot-starter-logging'
+        }
+        compile ('org.springframework.boot:spring-boot-starter-web') {
+            exclude module : 'spring-boot-starter-logging'
+        }
+ //       compile "org.slf4j:slf4j-api:${SLF4J_VERSION}"
+  //      compile "org.slf4j:slf4j-log4j12:${SLF4J_VERSION}"
+        //  compile "org.springframework.boot:spring-boot-starter-web"
+
+        testCompile "junit:junit:${JUNIT_VERSION}"
+
+    }
+}
+
