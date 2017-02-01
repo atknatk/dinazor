@@ -9,6 +9,9 @@ buildscript {
 
     }
 }
+//configurations.all {
+//    exclude group: "commons-logging", module: "commons-logging"
+//}
 
 allprojects {
     group 'com.dinazor'
@@ -43,12 +46,16 @@ subprojects {
         compile ('org.springframework.boot:spring-boot-starter-web') {
             exclude module : 'spring-boot-starter-logging'
         }
- //       compile "org.slf4j:slf4j-api:${SLF4J_VERSION}"
+      //  compile("org.springframework.boot:spring-boot-starter-actuator")
+    //    compile("org.springframework.boot:spring-boot-starter-aop")
+
+        //       compile "org.slf4j:slf4j-api:${SLF4J_VERSION}"
   //      compile "org.slf4j:slf4j-log4j12:${SLF4J_VERSION}"
         //  compile "org.springframework.boot:spring-boot-starter-web"
 
         testCompile "junit:junit:${JUNIT_VERSION}"
-
+        //testCompile "commons-logging:commons-logging:1.1"
+        testCompile "org.springframework.boot:spring-boot-starter-test"
     }
 }
 

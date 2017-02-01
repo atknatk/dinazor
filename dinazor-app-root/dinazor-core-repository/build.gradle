@@ -1,0 +1,5 @@
+dependencies {
+   compile project(':dinazor-core-api')
+   compile "org.hibernate:hibernate-core:${HIBERNATE_VERSION}"
+
+}

@@ -1,7 +1,11 @@
 rootProject.name = 'dinazor-app-root'
-include "dinazor-core"
-include "dinazor-domain"
-include "dinazor-api"
-include "dinazor-api-impl"
 include "dinazor-app"
-include "dinazor-repository"
+include "dinazor-core-common"
+include "dinazor-core-domain"
+include "dinazor-core-dto"
+include "dinazor-core-log"
+include "dinazor-core-repository"
+include "dinazor-core-service"
+include "dinazor-core-api"
+//include "dinazor-module-user-management"
+
